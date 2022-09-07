@@ -20,6 +20,37 @@
     -webkit-user-drag: none;
     overflow: auto;
 }
+#inputs{
+    overflow-y: auto;
+    border-radius: 3px ;
+    background-color: var(--color2);
+    flex: -1;
+    /* Space between columns */
+    margin: 8px 8px;
+    height: 80%;
+    /* Layout each column */
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    box-shadow: none;
+    background-color: var(--color1);
+
+}
+
+#add{
+    border-radius: 3px ;
+    background-color: var(--color1);
+    flex: -1;
+    /* Space between columns */
+    margin: 8px 8px;
+    height: 30%;
+    /* Layout each column */
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+
+}
+
 #display2::-webkit-scrollbar {
     width: 7px;
     background-color: transparent;   
@@ -27,12 +58,31 @@
         
     } 
       
-    #display2::-webkit-scrollbar-thumb {   
+#display2::-webkit-scrollbar-thumb {   
     background-color: rgb(231, 248, 255);   
     border-radius: 4px;
-        display: none;
-    
-    }
+    display: none;
+
+}
+
+
+#inputs::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 3px;
+    background-color: var(--color2);  
+    border: solid 2px var(--color1); 
+    border-radius:0  3px 3px  0 ;
+
+} 
+          
+#inputs::-webkit-scrollbar-thumb {   
+    background-color: var(--color3);   
+    border-radius:3px;
+    border-left: solid 2px var(--color1); 
+    border-right: solid 2px var(--color1); 
+
+
+}
 .container {
     width: 100%;
     display: flex;
