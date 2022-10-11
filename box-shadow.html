@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>box-shadow</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/top.css">
+    <link rel="stylesheet" href="styles/boxShadow/bs.css">
+    <link rel="shortcut icon" href="img/boxShadow/bsLogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <nav translate="no">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<span class="material-symbols-outlined" id="openMenu">
+					menu
+			</span>
+		</label>
+		<label class="logo" onclick="logoFunction()">
+			<img src="img/boxShadow/title.svg" alt="" width=200px">
+          
+		</label>
+		<ul id="menu">
+			<li><a id="br" class="btn"              href="border-radius.html">border-radius</a></li>
+			<li><a id="bs" class="btn active" 		href="#">box-shadow</a></li>
+			<li><a id="gr" class="btn" 		        href="backgrounds.html">backgrounds</a></li>
+		
+		</ul>
+	</nav>
+    <section>
+        <div class="container">
+            <div id="display1" class="display">
+
+                <div id="div1" class="divs">
+                    <div id="msg">click~me</div>
+                    <div id="block">
+                        <input type="color" value = "#272643"name="" id="blockColor" oninput="changeBlockColor(this.value)">
+                        click me
+                    </div>
+                    <input type="color" value = "#ffffff"name="" id="backColor" oninput="changeBackColor(this.value)">
+                </div>
+                <div id="div2" class="divs">
+                    <div id="layers">
+                        <div class="layer activeL" id="0" onclick="layerClick(this.id)">
+                            <span class="layerName">layer0</span>
+                            <span class="layerValue">6px 6px 0px 0px rgba(44,105,141 ,0.5)</span>
+                            <button class="delete">delete</button>
+                        </div>
+                  
+
+                    </div>
+                    <div id="new">
+                        <button onclick="newLayer()">+ new layer</button>
+                    </div>
+                    <div id="kingValue">
+                        <textarea name="" id="text" cols="30" rows="10" spellcheck="false">box-shadow: 6px 6px 0px 0px rgba(44,105,141 ,0.5)
+-webkit-box-shadow: 6px 6px 0px 0px rgba(44,105,141 ,0.5);
+-moz-box-shadow: 6px 6px 0px 0px rgba(44,105,141 ,0.5);
+                    </textarea>
+                        <button onclick="copyx(this)" id="text">copy</button>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- ..................  -->
+            <div id="display2" class="display">
+                <div class="inputDiv">
+                    <div class="desc">
+                        <span class="material-symbols-outlined" translate="no">
+                            align_horizontal_right 
+                        </span>
+                        moveX 
+                    </div>
+                    <input type="range" class="input" id="movex" value="6" min="-50" max="50" oninput="inputClick(this.id,this.value)">
+                    <div class="val" id="movexValue">6px</div>
+                </div>
+
+                <div class="inputDiv">
+                    <div class="desc">
+                        <span class="material-symbols-outlined" translate="no">
+                            align_vertical_bottom
+                        </span>
+                        moveY
+                    </div>
+                    <input type="range" class="input" id="movey" value="6" min="-50" max="50" oninput="inputClick(this.id,this.value)">
+                    <div class="val" id="moveyValue">6px</div>
+                </div>
+
+                <div class="inputDiv">
+                    
+                    <div class="desc">
+                        <span class="material-symbols-outlined" translate="no">
+                            aspect_ratio
+                        </span>
+                        size
+                    </div>
+                    <input type="range" class="input" id="size" value="0" max="50" oninput="inputClick(this.id,this.value)">
+                    <div class="val" id="sizeValue">0px</div>
+                </div>
+
+                <div class="inputDiv">  
+                    <div class="desc">
+                        <span class="material-symbols-outlined" translate="no">
+                            lens_blur
+                            </span>
+                            blur
+                    </div>  
+                    <input type="range" class="input" id="blur" value="0" max="50" oninput="inputClick(this.id,this.value)">
+                    <div class="val" id="blurValue">0px</div>
+                </div>
+
+                <div class="inputDiv">
+                    <div class="desc">
+                        <span class="material-symbols-outlined" translate="no">
+                            opacity
+                        </span>
+                        opacity
+                    </div> 
+                    <input type="range" class="input" id="opacity" step="0.01" value="0.50" max="1" oninput="inputClick(this.id,this.value)">
+                    <div class="val" id="opacityValue">50%</div>
+                </div>
+                <div id="inputColor" class="inputDiv">
+                    color
+                    <input type="color" value="#2c698d" name="" id="color" oninput="inputClick(this.id,this.value)">
+                </div>
+                
+                <div id="inputOrientation" class="inputDiv">
+                    orientation
+                    <input type="button" class="orient activeO" name="" id="offset" onclick="inputClick(this.id,this.value)" value="outside">
+                    <input type="button" class="orient" name="" id="inset" onclick="inputClick(this.id,this.value)" value="inside">
+                   
+                </div>
+            </div>
+        </div>
+        <div id="publ">
+            <div>add</div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1281822003681691" crossorigin="anonymous"></script>
+            <!-- bloco-resp1 -->
+            <ins class="adsbygoogle"
+                style="background-size: 150px; display:block;background-color: #272643;background-image:url(styles/border-radius/ad.svg);"
+                data-ad-client="ca-pub-1281822003681691"
+                data-ad-slot="4971388670"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+	</section>
+</body>
+
+<style>
+    :root{
+        --color1:#272643;
+        --color2:#2c698d;
+        --color3:#bae8e8;
+        --color4:#e3f6f5;
+        --color5:#ffffff;
+
+    }
+</style>
+<!-- global -->
+<script src="scripts/menu.js"></script>
+<!-- finsh global -->
+
+
+<!-- of appp -->
+<script src="scripts/boxShadow/boxShadow.js"></script>
+<script src="scripts/boxShadow/menuLayer.js"></script>
+<script src="scripts/boxShadow/menuOrientation.js"></script>
+<!-- finish of app -->
+</html>
