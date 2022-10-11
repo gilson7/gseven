@@ -1,0 +1,382 @@
+body{
+    background-color: var(--color1);
+}
+.container {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    text-align: center;
+    -webkit-user-drag: none;
+    user-select: none;
+
+}
+
+.display {
+    border-radius: 3px ;
+    background-color: var(--color3);
+    flex: -1;
+    /* Space between columns */
+    margin: 4px;
+    height: 87vh;
+    /* Layout each column */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+#display2{
+    margin-left: 0px;
+    overflow-y: auto;
+    overflow-x: none;
+    background-color: var(--color1);
+}
+
+.inputDiv{
+    width: 95%;
+    margin-top: 20px;
+    background-color: var(--color2);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    color: var(--color2);
+    padding-top: 5px;
+    font-weight: 600;
+    border: solid 1px var(--color3);
+    background: linear-gradient(260deg, rgba(227,246,245,1) 0%, rgba(186,232,232,1) 100%);
+    box-shadow: 0px 6px 17px 0px #0f263346;
+}
+.inputDiv span{
+    font-size: 15px;
+    float: left;
+    background-color: var(--color5);
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--color2);
+}
+.input{
+    width: 90%;
+    -webkit-user-drag: none;
+}
+
+.input{
+    border-radius: 3px;
+    background-color:var(--color2);
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    height: 5px;
+    left: 4em;
+    outline: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  
+    
+}
+.input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 15px; 
+    background-color:var(--color1);
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+
+
+
+.input input::-moz-range-thumb{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    cursor: pointer;
+    
+}
+
+
+.desc{
+    text-align: right;
+    width: 98%;
+    padding: 3px;
+    border-radius: 3px;
+    margin: auto;
+    background-color: var(--color2);
+    color: var(--color5);
+    background: linear-gradient(260deg, var(--color2) 0%, var(--color1) 100%);
+}
+
+#block{
+    color: var(--color5);
+    background-color: var(--color1);
+    text-align: center;
+    margin: auto;
+    border-radius: 3px;
+    width: 30%;
+    padding-top: 10.1%;
+    padding-bottom:10.1%;
+    box-shadow: 6px 6px 0px 0px rgba(44,105,141 ,0.5);
+}
+#block input{
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+}
+
+#msg{
+   display: inline;
+   width: 0;
+   margin-top: -35vh;
+   margin-left: 1vw;
+   pointer-events: none;
+
+}
+#div1 input{
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+    width: 0;
+}
+.divs{
+    display: flex;
+    height: 50%;
+    background-color: var(--color2);
+    margin: 2%;
+    border-radius: 3px;
+    color: var(--color2);
+    align-items: center;
+    font-weight: 600;
+}
+#div1{
+    background-color: var(--color5);
+}
+#div2{
+    text-align: center;
+    display: flex;
+    width: 96%;
+    flex-direction: column;
+    
+}
+#layers{
+
+    display: flex;
+    background-color: var(--color2);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.layer{
+    background-color: var(--color4);
+    margin: 3px;
+    padding: 3px;
+    border-radius: 3px;
+    display: block;
+    height: fit-content;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    cursor: pointer;
+
+}
+
+.activeL{
+    background-color: var(--color3);
+    margin: 3px;
+    padding: 3px;
+    border-radius: 3px;
+    display: block;
+    height: fit-content;
+    width: 98%;
+    cursor: default;
+
+}
+.layerName{
+    background-color: var(--color1);
+    color: var(--color4);
+    padding:1px 3px;
+    border-radius: 3px;
+    float: left;
+    margin: -1px;
+}
+.layerValue{
+    user-select:text;
+    font-size: 12px;
+    font-family: monospace;
+    
+}
+/*<em desenvoliment> */
+.delete{
+    font-size: 0px;
+    border: none;
+    float: right;
+    border-radius: 3px;
+    background-color: var(--color2);
+    color: var(--color5);
+    cursor:pointer;
+    display: none;
+}
+
+.delete:hover{
+    background-color: var(--color1);
+}
+/*</em desenvoliment> */
+#kingValue{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 3px;
+    flex-direction: column;
+}
+#new{
+    width: 100%;
+
+}
+#new button{
+    padding:2px 3px;
+    font-family: Abel;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 3px;
+    border-radius: 3px;
+    background-color: var(--color1);
+    color: var(--color3);
+    border: solid 1px;
+    cursor: pointer;
+    transition: 200ms;
+}
+#new button:active{
+    color: var(--color2);
+
+}
+#text{
+    display: block;
+    height: 80%;
+    width: 100%;
+    resize: none;
+    border-radius: 3px;
+    background-color: var(--color1);
+    outline: none;
+    padding: 3px;
+    color:var(--color3) ;
+    border: none;
+}
+#kingValue button{
+    width: 98%;
+    height: 20%;
+    display: block;
+    border: none;
+    background-color: var(--color3);
+    margin: 3px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-family: Abel;
+    font-weight: 600;
+    color: var(--color2);
+    border-radius:3px;
+}
+#kingValue button:hover{
+    transition: 100ms;
+    background-color: var(--color1);
+    cursor: pointer;
+    pointer-events: all;
+}
+#kingValue button:active{
+    transition: 0;
+
+}
+
+
+/* sd
+dsdsdsdsdsdsds */
+
+#inputColor input{
+    border: none;
+    width: 95%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0;
+    background: transparent;
+
+}
+
+.orient{
+    font-family: Abel;
+    background-color: var(--color3);
+    color: var(--color2);
+    width: 95%;
+    font-size: 15px;
+    margin-bottom: 5px;
+    border: none;
+    padding: 3px;
+    box-shadow: rgb(44 105 141 / 50%) 0px 5px 11px 0px;
+}
+.orient:hover{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+.activeO{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+#text{
+    white-space: nowrap;
+    font-size: 10px;
+}
+#text::selection{
+    color: var(--color5);
+    background: var(--color2);
+}
+
+
+
+/* personalize scrollbar */
+#layers::-webkit-scrollbar {
+    width: 12px;   
+        /* width of the entire scrollbar */
+  }
+  
+#layers::-webkit-scrollbar-track {
+    background: var(--color1);  
+    border-radius:0 2px 2px 0;              /* color of the tracking area */
+    cursor: default;
+}
+  
+#layers::-webkit-scrollbar-thumb {
+    background-color: var(--color3);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--color1);  /* creates padding around scroll thumb */
+    
+}
+
+
+
+#display2::-webkit-scrollbar {
+    width: 5px;   
+        /* width of the entire scrollbar */
+  }
+  
+#display2::-webkit-scrollbar-track {
+    background: var(--color2);  
+    border-radius:0 2px 2px 0;          /* color of the tracking area */
+    cursor: default;
+  
+}
+  
+#display2::-webkit-scrollbar-thumb {
+    background-color: var(--color3);    /* color of the scroll thumb */
+    border-radius: 3px;       /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
+    
+}
+
