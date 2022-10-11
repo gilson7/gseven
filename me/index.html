@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <title>GSEVEN</title>
+</head>
+<body onload="carregar()" >
+    <div id="blur">
+        
+    </div>
+  
+    <div id="mlogo"></div>
+    <div id="con1">
+        <div id="top">
+            <div id="cabe">
+                <div id="perfil">
+                    <img src="favicon.png" alt="">
+                </div>
+                <div id="logo1">GSEVEN</div>
+                <div id="h3">Welcome to my website</div>
+                <div class="p" lang="en-us">
+                    <br>I am Gseven and this is my little project <br> here you can enjoy small tools <br> created using js, html and css
+                    <br>below you will find:
+                    <li>notes,</li>
+                    <li>wallpapers,</li>
+                    <li>calc,</li>
+                    <li>drumpad</li>
+                    <li>Etc</li>
+                </div>
+                  <div id="arts"><a href="ferramentas/arts/index.html">my arts</a></p></div>
+                </div>
+            
+        </div>
+
+        <div id="marg">
+            <div id="sombra1"></div>
+                <div id="esq" class="btt">
+                    <img src="icones/seta.png" id="iconesq" width="30px">
+                </div>
+                <div id="dir" class="btt">
+                    <img src="icones/seta.png" id="icondir" width="30px">
+                </div>
+        <div id="roda">
+           
+                <a href="ferramentas/drum/index.html">
+                    <div class="app" onclick="load()">
+                        <div id="desc">
+                            <p class="t">DrumJesey</p>
+                            <p class="desctxt">
+                            an application that plays electronic drum sounds
+                           </p>
+                        
+                        </div>
+                        <div class="iconapp" ><img src="ferramentas/drum/icon.svg"></div>
+                    </div>
+                </a>
+
+
+                <a href="ferramentas/calc/index.html">
+                    <div class="app" onclick="load()">
+                        <div id="desc">
+                            <p class="t">Calculator</p>
+                            <p class="desctxt">
+                            a simple caculator
+                           </p>
+                        </div>
+                        <div class="iconapp"><img src="ferramentas/calc/calc.png"></div>
+                    </div>
+                </a>
+
+
+                <a href="ferramentas/picker/index.html">
+                    <div class="app" onclick="load()">
+                        <div id="desc">
+                            <p class="t">RGB</p>
+                            <p class="desctxt">
+                            an RGB color picker
+                           </p>
+                        </div>
+                        <div class="iconapp"><img src="ferramentas/picker/picker.png"></div>
+                    </div>
+                </a>
+
+
+                <a href="ferramentas/picker/gg.html">
+                    <div class="app" onclick="load()">
+                        <div id="desc">
+                            <p class="t">PICKER IMG</p>
+                            <p class="desctxt">
+                            This application selects the colors of an image and gives it an rgb code
+                           </p>
+                        </div>
+                        <div class="iconapp"><img src="ferramentas/picker/imgpicker.png"></div>
+                    </div>
+                </a>
+
+
+                <a href="ferramentas/tasks/index.html">
+                    <div class="app" onclick="load()">
+                        <div id="desc">
+                           <p class="t">TASK</p>
+                            <p class="desctxt">
+                            This is a note app for you to save your tasks and reminders
+                           </p>
+                       </div>
+                        <div class="iconapp"><img src="ferramentas/tasks/tasks.png"></div>
+                    </div>
+                </a>
+
+
+                <a href="ferramentas/7img/index.html">
+                    <div class="app" onclick="load()">
+                        <div id="desc">
+                           <p class="t">SEVEN IMG</p>
+                            <p class="desctxt">
+                           browsing and downloading images
+                           </p>
+                       </div>
+                        <div class="iconapp"><img src="ferramentas/7img/7img.png"></div>
+                    </div>
+                </a>
+    
+
+
+
+    
+            </div>
+            <div id="sombra2"></div>
+        </div>
+   
+
+       
+        <div id="parts"></div>
+        <div id="logo"><img src="gg7.png" alt=""></div>
+    </div>
+
+
+    <script src="ip.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="apiView.js"></script>
+    <script src="manifest.js"></script>
+</body>
+</html>
