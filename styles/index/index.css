@@ -352,3 +352,17 @@ width: 100%;
     font-weight: 700;
     padding-bottom: 5px;
 }
+@media (max-width: 858px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    #all{
+        width:auto;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    .imgh { 
+        width: 80%;
+    }
+}
