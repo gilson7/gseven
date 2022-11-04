@@ -366,3 +366,23 @@ width: 100%;
         width: 80%;
     }
 }
+@media (max-width: 858px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    #all{
+        width:auto;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    .imgh { 
+        width: 80%;
+    }
+ 
+}
+@media (max-width: 400px){
+    #center h1{
+        font-size:50px ;
+    }
+}
