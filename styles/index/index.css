@@ -27,9 +27,9 @@ body{
     margin: 0;
    transition: 500ms;
 }
-
-#topdiv div{
-  
+#left{
+    text-align: left;
+    width: 20%;
     flex: -1;
     /* Space between columns */
     margin: 2px 2px;
@@ -38,10 +38,6 @@ body{
  
     flex-direction: column;
     margin: 0;
-}
-#left{
-    text-align: left;
-    width: 20%;
 }
 
 #left div{
@@ -56,7 +52,14 @@ body{
     width: 150%;
     font-family: 'Antonio';
     color: var(--color5);
-
+    flex: -1;
+    /* Space between columns */
+    margin: 2px 2px;
+    /* Layout each column */
+    display: flex;
+ 
+    flex-direction: column;
+    margin: 0;
 }
 #center h1{
     font-size: 70px;   
@@ -83,6 +86,14 @@ body{
     text-align: right;
     width: 20%;
     align-items: flex-end;
+    flex: -1;
+    /* Space between columns */
+    margin: 2px 2px;
+    /* Layout each column */
+    display: flex;
+ 
+    flex-direction: column;
+    margin: 0;
 }
 #right h1{
    margin:5px 10px;
@@ -352,20 +363,7 @@ width: 100%;
     font-weight: 700;
     padding-bottom: 5px;
 }
-@media (max-width: 858px){
-    body{
-        width: 100vw;
-        overflow-x: hidden;
-    }
-    #all{
-        width:auto;
-        margin: auto;
-        overflow-x: hidden;
-    }
-    .imgh { 
-        width: 80%;
-    }
-}
+
 @media (max-width: 858px){
     body{
         width: 100vw;
@@ -390,13 +388,15 @@ width: 100%;
     }
     #center{
         text-align: center;
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     #left{
         display: none;
-        width: 0;
     }
     #right{
         display: none;
-        width: 0;
     }
+  
 }
