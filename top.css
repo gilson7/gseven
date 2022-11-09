@@ -1,0 +1,130 @@
+/*
+--color1:#272643;
+--color2:#2c698d;
+--color3:#bae8e8;
+--color4:#e3f6f5;
+--color5:#ffffff; 
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Antonio:wght@400;500&family=Julius+Sans+One&family=VT323&display=swap');
+body{
+	margin: 0;
+	background: var(--color4);
+}
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Abel;
+}
+nav {
+	background: var(--color2);
+	height: 60px;
+	width: 100%;
+}
+label.logo {
+	display:inline-block;
+	color: var(--color5);
+	padding: 0 20px;
+	font-weight: bold;
+	height: 80px;
+	margin-top:1px;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+	nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: -10px 5px;
+}
+nav ul li a {
+	color: var(--color5);
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: var(--color1);
+	transition: .5s;
+
+}
+.checkbtn {
+	font-size: 30px;
+	color: var(--color5);
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px){
+label.logo{
+	
+	padding-left: 30px;
+}
+nav ul li a{
+	font-size: 16px;
+}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background:var(--color1);
+		top: 60px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		z-index: 99;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: var(--color2);
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+/* publicidade */
+#publ{
+	color: var(--color2);
+	text-align: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+nav{
+	position: fixed;
+	z-index: 99;
+	top: 0;
+}
+section{
+	margin-top: 60px;
+}
+
+

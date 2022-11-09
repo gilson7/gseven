@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="125.834" y1="-0.172" x2="125.834" y2="48.76" id="gradient-1">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: #758d29"/>
+    </linearGradient>
+  </defs>
+  <text style="fill: none; font-family: Antonio; font-size: 51.3px; stroke: rgb(149, 173, 190); white-space: pre;" transform="matrix(0, 1, -1, 0, -122.765106, 552.936279)" x="-192.701" y="-129.416">GSEVEN</text>
+  <text style="fill: rgb(149, 173, 190); font-family: Abel; font-size: 38.1px; stroke: url(#gradient-1); stroke-width: 0px; white-space: pre;" x="8.324" y="37.711">777777</text>
+</svg>

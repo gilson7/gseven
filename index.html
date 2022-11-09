@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>GSEVEN</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div id="all">
+        <div id="topdiv">
+            <div id="left">
+                <div>
+                <img src="img/leftTexture.svg" alt="">
+                </div>
+            </div>
+            <div id="center">
+                <h1>GSEVEN</h1>
+                <div id="gs"></div>
+            </div>
+            <div id="right">
+                <div>
+                    <img src="img/rightTexture.svg" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <div id="midleDiv">
+            <h1>My Apps</h1>
+            <div id="apps">
+                <a href="csshelp/shadow/index.html" class="app">
+                    <div>
+                        <h2 translate="no">box-shadow</h2>
+                        <img src="csshelp/shadow/img/logo.svg" alt="">
+                    </div>
+                </a>
+                <a href="csshelp/radius/index.html" class="app">
+                    <div>
+                        <h2 translate="no">border-raidus</h2>
+                        <img src="csshelp/radius/img/logo.svg" alt="">
+                    </div>
+                </a>
+    
+                <a href="csshelp/patterns/index.html" class="app">
+                    <div>
+                        <h2 translate="no">patterns</h2>
+                        <img src="csshelp/patterns/img/logo.svg" alt="">
+                    </div>
+                </a>
+
+                <a href="portfolio/" class="app">
+                    <div>
+                        <h2 translate="no">portifólio</h2>
+                        <img src="portfolio/favicon.png" alt="">
+                    </div>
+                </a>
+    
+                <a href="portfolio/ferramentas/tasks/index.html" class="app">
+                    <div>
+                        <h2 translate="no">tasks</h2>
+                        <img src="portfolio/ferramentas/tasks/tasks.png" alt="">
+                    </div>
+                </a>
+    
+                <a href="portfolio/ferramentas/drum/index.html" class="app">
+                    <div translate="no">
+                        <h2 translate="no">Drum-jersey</h2>
+                        <img src="portfolio/ferramentas/drum/icon.svg" alt="">
+                    </div>
+                </a>
+    
+                <a href="portfolio/ferramentas/picker/index.html" class="app">
+                    <div>
+                        <h2 translate="no">RGB-picker</h2>
+                        <img src="portfolio/ferramentas/picker/picker.png" alt="">
+                    </div>
+                </a>
+                <a href="portfolio/ferramentas/arts/index.html" class="app">
+                    <div>
+                        <h2 translate="no">Arts</h2>
+                        <img src="portfolio/ferramentas/arts/icons/favicon.svg" alt="">
+                    </div>
+                </a>
+       
+            </div>
+        </div>
+        <div id="apr">
+            <div id="appresentation">
+                <h1>preview</h1>
+                <div class="imgh">
+                    <img src="img/preview/port.png" alt="">
+                </div>
+            <script>
+                let urli  = "img/preview/"
+                let urls = [urli+"port.png",urli+"drum.png",urli+"arts.png"]
+                let indexy = 0
+                setInterval(()=>{
+                    indexy++
+                    if (indexy==urls.length) {
+                        indexy = 0
+                    }
+                    document.querySelector(".imgh img").style.opacity="2%"
+                    document.querySelector(".imgh img").style.borderRadius="100%" 
+                    setTimeout(function(){
+
+                        document.querySelector(".imgh img").style.opacity="100%"
+                        document.querySelector(".imgh img").style.borderRadius="5px"
+                        document.querySelector(".imgh img").src=urls[indexy]
+                    
+                    },500)
+                    
+         
+                   
+                },4200)
+       
+            </script>
+            </div>
+        </div>
+     
+        <div id="aboutMe" class="aboutPT">
+            <div id="topText">    
+                <div id="topTitle">
+                    <div>
+                        <h1>GSEVEN</h1>
+                        <h3 id="aboutMeTl">Sobre Mim</h3>
+                    </div>
+                   
+                </div>
+                <div id="lang">
+                    <button id="pt" class="bt active">pt-br</button>
+                    <button id="en" class="bt">english</button>
+                </div>
+            </div>
+            <div id="textPt" class="text_me">
+                Meu nome é Gilson, Eu sou um desenvolvedor web brasileiro,
+                esse pequeno projeto tem como objetivo ajudar-me a desenvolver e aprimorar minhas habilidades
+                <br>    como desenvolvedor front-end
+            </div>
+
+            <div id="contact">
+                <h1 id="endMsg">vamos trabalhar juntos</h1>
+                <div id="conts">
+                    <div>gseven.me@gmail.com</div>
+                    <a href="https://www.instagram.com/gseven.me" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512.00006" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m261.039062 512c-1.695312 0-3.390624 0-5.097656-.007812-40.132812.097656-77.214844-.921876-113.277344-3.117188-33.0625-2.011719-63.242187-13.4375-87.28125-33.039062-23.195312-18.914063-39.035156-44.488282-47.078124-76.003907-7-27.4375-7.371094-54.371093-7.726563-80.421875-.257813-18.691406-.5234375-40.839844-.578125-63.363281.0546875-22.617187.320312-44.765625.578125-63.457031.355469-26.046875.726563-52.980469 7.726563-80.421875 8.042968-31.515625 23.882812-57.089844 47.078124-76.003907 24.039063-19.601562 54.21875-31.027343 87.285157-33.039062 36.0625-2.191406 73.152343-3.2148438 113.371093-3.1171875 40.144532-.0859375 77.214844.9257815 113.277344 3.1171875 33.0625 2.011719 63.242188 13.4375 87.28125 33.039062 23.199219 18.914063 39.035156 44.488282 47.078125 76.003907 7 27.4375 7.371094 54.375 7.726563 80.421875.257812 18.691406.527344 40.839844.578125 63.363281v.09375c-.050781 22.523437-.320313 44.671875-.578125 63.363281-.355469 26.046875-.722656 52.980469-7.726563 80.421875-8.042969 31.515625-23.878906 57.089844-47.078125 76.003907-24.039062 19.601562-54.21875 31.027343-87.28125 33.039062-34.535156 2.101562-70.011718 3.125-108.277344 3.125zm-5.097656-40.007812c39.480469.09375 75.730469-.902344 110.945313-3.042969 25-1.519531 46.675781-9.632813 64.433593-24.113281 16.414063-13.386719 27.71875-31.855469 33.597657-54.894532 5.828125-22.839844 6.164062-47.363281 6.488281-71.078125.253906-18.566406.519531-40.558593.574219-62.863281-.054688-22.308594-.320313-44.296875-.574219-62.863281-.324219-23.714844-.660156-48.238281-6.488281-71.082031-5.878907-23.039063-17.183594-41.507813-33.597657-54.894532-17.757812-14.476562-39.433593-22.589844-64.433593-24.109375-35.214844-2.144531-71.464844-3.132812-110.851563-3.046875-39.472656-.09375-75.726562.902344-110.941406 3.046875-25 1.519531-46.675781 9.632813-64.433594 24.109375-16.414062 13.386719-27.71875 31.855469-33.597656 54.894532-5.828125 22.84375-6.164062 47.363281-6.488281 71.082031-.253907 18.582031-.519531 40.585937-.574219 62.910156.054688 22.226563.320312 44.234375.574219 62.816406.324219 23.714844.660156 48.238281 6.488281 71.078125 5.878906 23.039063 17.183594 41.507813 33.597656 54.894532 17.757813 14.476562 39.433594 22.589843 64.433594 24.109374 35.214844 2.144532 71.476562 3.144532 110.847656 3.046876zm-.953125-90.992188c-68.921875 0-125-56.074219-125-125s56.078125-125 125-125c68.925781 0 125 56.074219 125 125s-56.074219 125-125 125zm0-210c-46.867187 0-85 38.132812-85 85s38.132813 85 85 85c46.871094 0 85-38.132812 85-85s-38.128906-85-85-85zm139-80c-16.566406 0-30 13.429688-30 30s13.433594 30 30 30c16.570313 0 30-13.429688 30-30s-13.429687-30-30-30zm0 0" fill="#574f7d" data-original="#000000" class=""></path></g></svg>
+                    </a>
+                    <a href="https://twitter.com/GsevenMe" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 496 496" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g xmlns="http://www.w3.org/2000/svg"><g><g><path d="M365.008,0H130.992C57.536,0,0,57.536,0,130.992v234.016C0,438.464,57.536,496,130.992,496h234.016     C438.464,496,496,438.464,496,365.008V130.992C496,57.536,438.448,0,365.008,0z M464,365.008     c0,55.52-43.488,98.992-98.992,98.992H130.992C75.488,464,32,420.512,32,365.008V130.992C32,75.488,75.488,32,130.992,32h234.016     C420.528,32,464,75.488,464,130.992V365.008z" fill="#574f7d" data-original="#000000" class=""></path><path d="M403.984,126.64c-5.136-3.76-12.016-4.08-17.504-0.88c-5.472,3.216-17.6,4.8-27.328,6.08c-2.016,0.272-4,0.528-5.92,0.8     c-13.616-11.296-31.008-17.632-48.944-17.632c-40.4,0-73.552,31.264-75.904,70.592c-36.64-6.176-70.192-25.28-93.968-53.984     c-3.536-4.288-9.024-6.384-14.56-5.664c-5.504,0.768-10.208,4.336-12.432,9.424c-1.024,2.336-9.952,24.304-9.952,78.64     c0,47.056,37.136,81.632,62.608,99.824c-17.424,7.92-37.504,10.832-56.576,8.72c-7.456-0.8-14.432,3.584-16.896,10.608     c-2.464,7.04,0.256,14.848,6.56,18.832c30.08,18.976,64.848,29.008,100.56,29.008c114.688,0,184.096-90.096,186.672-178.928     c3.296-4.784,9.584-14.096,20.208-30.432c4.256-6.576,7.824-20.752,9.568-28.608C411.568,136.832,409.12,130.384,403.984,126.64z      M351.536,187.536c-1.968,2.72-3.04,6.016-3.04,9.376c0,63.152-48.016,152.096-154.752,152.096     c-9.648,0-19.216-0.88-28.592-2.608c12.512-4.736,24.336-11.344,35.2-19.712c4.352-3.344,6.672-8.72,6.16-14.176     c-0.512-5.456-3.792-10.288-8.704-12.768c-0.688-0.352-68.32-35.92-68.32-85.712c0-16.688,0.896-29.808,2.08-39.792     c31.408,27.04,71.376,43.216,113.44,45.296c0.32,0.016,0.656,0.032,0.96,0.016c9.312-0.272,16.16-7.104,16.16-16     c0-2.208-0.448-4.304-1.264-6.224c-0.4-2.4-0.608-4.816-0.608-7.232c0-23.76,19.744-43.088,44.032-43.088     c12.192,0,23.92,4.992,32.192,13.68c3.776,3.936,9.296,5.712,14.624,4.672c3.632-0.688,7.824-1.232,12.224-1.808     c1.568-0.208,3.152-0.416,4.768-0.64C356.08,181.216,351.744,187.248,351.536,187.536z" fill="#574f7d" data-original="#000000" class=""></path></g></g></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"> </g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"> </g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g><g xmlns="http://www.w3.org/2000/svg"></g></g></svg>
+                    </a>
+                </div>
+            </div>
+            <script>
+                
+                var btns = document.getElementsByClassName("bt");
+                for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function(e) {
+                setLanguage(e.target.id)
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+                }
+                let aboutMe = document.getElementById("aboutMeTl")
+                let kingText = document.getElementById("textPt")
+                let end = document.getElementById("endMsg")
+
+
+                var title ={
+                    pt:"Sobre Mim",
+                    en:"About Me"
+                }
+                var text={
+                    pt:`Meu nome é Gilson, Eu sou um desenvolvedor web brasileiro,esse pequeno projeto <br> tem como objetivo ajudar-me a desenvolver e aprimorar minhas habilidades
+                    como desenvolvedor front-end`,
+                    en:`
+                    My name is Gilson, I'm a Brazilian web developer, this little project
+                    aims to help me develop and improve my skills
+                    as a front end developer
+                    `
+                }
+
+
+                endMsg={
+                    en:"let's work together",
+                    pt:"vamos trabalhar juntos"
+                }
+
+                function setLanguage(lang) {
+                    aboutMe.innerHTML=title[lang]
+                    kingText.innerHTML=text[lang]
+                    end.innerHTML= endMsg[lang]
+                    // if(lang=="pt"){
+                    //     aboutMe.innerHTML=title.pt
+                    //     kingText.innerHTML=text.pt
+                    //     endMsg.innerHTML=endMsg.pt
+                    // }else if(lang=="en"){
+                    //     aboutMe.innerHTML=title.en
+                    //     kingText.innerHTML=text.en
+                    //     end.innerHTML=endMsg.en
+                    // }   
+                }
+
+            </script>
+        </div>
+    </div>
+    
+</body>
+
+<style>
+    :root{
+        --color1:#3c2a4d;
+        --color2:#503a65;
+        --color3:#574f7d;
+        --color4:#95adbe;
+        --color5:#e0f0ea;
+
+    }
+</style>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelector("#center h1"), {
+       max: 10,
+       speed: 400,
+       glare:true,
+       "max-glare":0.1,
+    });
+/*
+    let app = document.getElementsByClassName("app")
+
+    for (let index = 0; index < app.length; index++) {
+        const element = app[index];
+            VanillaTilt.init(element, {
+            max: 50,
+            speed: 100,
+            glare:true,
+            "max-glare":1,
+        });
+    }
+*/
+   document.querySelector("#center h1").addEventListener("mousemove",()=>{
+        document.getElementById("gs").style.transform =   document.querySelector("#center h1").style.transform +"translateY(20px)"
+   })
+</script>
+</html>
