@@ -466,4 +466,5 @@ body::-webkit-scrollbar-thumb {
     backdrop-filter: blur(15px) brightness(70%);
     pointer-events: none;
     top: 0;
+    left:0;
 }
