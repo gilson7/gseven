@@ -35,18 +35,11 @@ function carregar(){
   || navigator.userAgent.match(/iPod/i)
   || navigator.userAgent.match(/BlackBerry/i)
   || navigator.userAgent.match(/Windows Phone/i)){
-    document.getElementById('popup').style.display="block"
-    document.getElementById("image1").style.display = "none"
-    document.getElementById("image1").style.transform = "scale(0)"
-    document.getElementById("image2").style.display="block"
-    document.getElementById('popup').style.width="300px"
-    document.getElementById('popup').style.fontSize="16px"
-    document.getElementById("popupmensage").innerHTML = "olá seja bem vindo ,faça um som maneiro"
-    displayType ="moba"
+    document.getElementById('popup').style.display="none"
+    clickok()
     type("touchstart")
   }else{
     document.getElementById('popup').style.display="block"
-    displayType ="desk"
     type("mousedown")
   }
 }
